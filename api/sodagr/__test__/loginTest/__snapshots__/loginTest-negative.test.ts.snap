@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`user login with invalid credential login with invalid type email & password 1`] = `
+{
+  "message": "email: email must be an email",
+  "success": false,
+}
+`;
+
+exports[`user login with invalid credential login with invalid type email & valid password 1`] = `
+{
+  "message": "password: password must be a string",
+  "success": false,
+}
+`;
+
+exports[`user login with invalid credential login with valid email & invalid type password 1`] = `
+{
+  "message": "email: email must be an email",
+  "success": false,
+}
+`;

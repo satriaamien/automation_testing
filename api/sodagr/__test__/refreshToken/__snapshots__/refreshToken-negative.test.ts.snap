@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`user failed to refresh token refresh token with empty payload 1`] = `
+{
+  "message": "Refresh token is invalid or has expired",
+  "success": false,
+}
+`;
+
+exports[`user failed to refresh token refresh token with expired token 1`] = `
+{
+  "message": "Refresh token is invalid or has expired",
+  "success": false,
+}
+`;
+
+exports[`user failed to refresh token refresh token with invalid type boolean 1`] = `
+{
+  "message": "refreshToken: refreshToken must be a string",
+  "success": false,
+}
+`;
+
+exports[`user failed to refresh token refresh token with invalid type number 1`] = `
+{
+  "message": "refreshToken: refreshToken must be a string",
+  "success": false,
+}
+`;
+
+exports[`user failed to refresh token refresh token with random string 1`] = `
+{
+  "message": "Refresh token is invalid or has expired",
+  "success": false,
+}
+`;

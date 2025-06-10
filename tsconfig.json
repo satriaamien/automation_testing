@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
+    // "typeRoots": ["./node_modules/@types", "./node_modules/@wdio"],
     "esModuleInterop": true,
     "moduleResolution": "node",
     "module": "ESNext",
-    // "module": "CommonJS",
     "target": "es2022",
+    // "module": "CommonJS",
     "lib": ["es2022", "dom"],
     "types": [
       "node",

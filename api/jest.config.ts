@@ -2,11 +2,20 @@
 import type { Config } from "jest";
 
 const config: Config = {
-  preset: "ts-jest", // Agar Jest menggunakan ts-jest untuk mengonversi TypeScript
-  testEnvironment: "node", // Gunakan lingkungan Node.js untuk pengujian
-  testMatch: [
-    "**/__test__/**/*.test.ts", // Match any test file inside __test__ folder
-  ], // Tentukan lokasi file pengujian
+  projects: [
+    {
+      displayName: "sodagr",
+      testMatch: ["**/sodagr/__test__/**/*.test.ts"],
+      preset: "ts-jest",
+      testEnvironment: "node",
+      setupFilesAfterEnv: ["./jest.setup.ts"],
+    },
+  ],
+  // preset: "ts-jest", // Agar Jest menggunakan ts-jest untuk mengonversi TypeScript
+  // testEnvironment: "node", // Gunakan lingkungan Node.js untuk pengujian
+  // testMatch: [
+  //   "**/sodagr/__test__/**/*.test.ts", // Match any test file inside __test__ folder
+  // ], // Tentukan lokasi file pengujian
   reporters: [
     "default",
     [

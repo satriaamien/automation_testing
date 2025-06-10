@@ -14,7 +14,6 @@ test.describe("My first test suite", () => {
     await page.goto("https://playwright.dev/");
     await page.$(`a:has-text("Get started")`);
     // await page.getByRole("link", { name: "Get started" }).click();
-
     // await expect(
     //   page.getByRole("heading", { name: "Installation" })
     // ).toBeVisible();
